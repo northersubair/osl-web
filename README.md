@@ -56,6 +56,13 @@ src/
 
 Add new tests as `*.test.ts` or `*.test.tsx` files under `src/`.
 
+## Funding progress
+
+`FundingProgress` (`src/components/funding-progress.tsx`) shows `raised` and an optional `goal`
+for one asset. Amounts are decimal strings with up to 7 decimals and are handled with `BigInt`
+(`src/lib/decimal.ts`), never floating point. The percentage is truncated so it only reads 100%
+when the goal is really reached, and it is not capped, so 130% shows as 130% while the bar stays full.
+
 ## Notes for contributors
 
 - This project uses a recent major version of Next.js. If something behaves differently from what you expect, check the docs bundled in `node_modules/next/dist/docs/`. `AGENTS.md` points AI coding tools at the same place.
