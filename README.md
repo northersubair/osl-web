@@ -51,6 +51,9 @@ Run lint, format check, typecheck, test, and build before opening a PR. CI runs 
 ```
 src/
   app/            Next.js App Router (layout, pages, global styles)
+  components/     reusable UI components (for example ProjectHeader)
+  fixtures/       typed sample data used until the API is available; always
+                  marked as sample and never to be shown as real data
   __tests__/      tests
 ```
 
