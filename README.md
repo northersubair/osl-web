@@ -51,6 +51,7 @@ Run lint, format check, typecheck, test, and build before opening a PR. CI runs 
 ```
 src/
   app/            Next.js App Router (layout, pages, global styles)
+  components/     shared UI (site header and footer, loading/error/empty states)
   __tests__/      tests
 ```
 
